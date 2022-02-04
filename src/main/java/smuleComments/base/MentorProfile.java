@@ -8,8 +8,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.time.Duration;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 import org.openqa.selenium.Alert;
@@ -135,9 +133,6 @@ public class MentorProfile extends CommonMethods {
 				}
 				driver.navigate().back();
 			}
-
-			DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-			LocalDateTime now = LocalDateTime.now();
 			out.close();
 			Thread.sleep(2000);
 			driver.quit();
