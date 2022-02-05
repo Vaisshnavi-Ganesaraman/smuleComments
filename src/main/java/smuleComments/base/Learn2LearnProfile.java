@@ -99,6 +99,10 @@ public class Learn2LearnProfile extends CommonMethods {
 				if (driver.findElement(By.xpath(COMMENTS_COUNT)).getText().contains("No comments")
 						|| !checkForPrevComments(joiner)) {
 
+					actions.moveToElement(driver.findElement(By.xpath("//div[@aria-label='Pause performance']")))
+							.click().build().perform();
+					Thread.sleep(2000);
+
 					boolean retry = false;
 					logger("-----------------------" + collabCount + "---------------------------------------");
 					comment(joiner, LINE1, 1, retry);
