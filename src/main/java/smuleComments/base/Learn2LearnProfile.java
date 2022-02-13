@@ -29,10 +29,10 @@ public class Learn2LearnProfile extends CommonMethods {
 		PrintWriter out = null;
 		BufferedWriter bufWriter;
 		int collabCount;
-		String fileName = "./" + TRACK + " - MaleMentee - Joiners.txt";
-		int inviteNumber = 1;
-		int collabCounter = 1;
-		boolean isScrollRequired = false;
+		String fileName = "./" + TRACK + " - FemaleMentee - Joiners.txt";
+		int inviteNumber = 2;
+		int collabCounter = 13;
+		boolean isScrollRequired = true;
 
 		try {
 			driver = startApp(SMULE_URL);
@@ -50,7 +50,7 @@ public class Learn2LearnProfile extends CommonMethods {
 			Thread.sleep(2000);
 
 			if (isScrollRequired) {
-				for (int i = 0; i < 3; i++) {
+				for (int i = 0; i < 1; i++) {
 					((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					Thread.sleep(2000);
 				}
@@ -72,7 +72,7 @@ public class Learn2LearnProfile extends CommonMethods {
 				int counter = 1;
 
 				if (isScrollRequired) {
-					for (int i = 0; i < 2; i++) {
+					for (int i = 0; i < 1; i++) {
 						Thread.sleep(2000);
 						((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					}
@@ -120,14 +120,14 @@ public class Learn2LearnProfile extends CommonMethods {
 					comment(joiner, LINE4, 4, retry);
 					Thread.sleep(2000);
 					logger(" Comment Line " + 4 + " has been posted successfully for " + joiner + ".");
-					retry = false;
-					comment(joiner, LINE5, 5, retry);
-					Thread.sleep(2000);
-					logger(" Comment Line " + 5 + " has been posted successfully for " + joiner + ".");
-					retry = false;
-					comment(joiner, LINE6, 6, retry);
-					Thread.sleep(2000);
-					logger(" Comment Line " + 6 + " has been posted successfully for " + joiner + ".");
+//					retry = false;
+//					comment(joiner, LINE5, 5, retry);
+//					Thread.sleep(2000);
+//					logger(" Comment Line " + 5 + " has been posted successfully for " + joiner + ".");
+//					retry = false;
+//					comment(joiner, LINE6, 6, retry);
+//					Thread.sleep(2000);
+//					logger(" Comment Line " + 6 + " has been posted successfully for " + joiner + ".");
 					logger("------------------------------------------------------------------------");
 				} else {
 					break;

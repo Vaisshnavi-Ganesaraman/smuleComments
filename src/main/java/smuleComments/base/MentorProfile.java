@@ -30,9 +30,9 @@ public class MentorProfile extends CommonMethods {
 		PrintWriter out = null;
 		BufferedWriter bufWriter;
 		int collabCount;
-		String fileName = "./" + TRACK + " - Ranjani - Joiners.txt";
-		boolean isScrollRequired = false;
-		int collabCounter = 1;
+		String fileName = "./" + TRACK + " - Aishu - Joiners.txt";
+		boolean isScrollRequired = true;
+		int collabCounter = 90;
 
 		try {
 			driver = startApp(SMULE_URL);
@@ -44,7 +44,7 @@ public class MentorProfile extends CommonMethods {
 			hit(SUBMIT_LOGIN);
 
 			hit(SEARCH);
-			enter(SEARCH_CURSOR, "Ranjani_V");
+			enter(SEARCH_CURSOR, "Aishshri");
 			Actions act = new Actions(driver);
 			act.sendKeys(Keys.ENTER).perform();
 			hit(GO_TO_PROFILE);
@@ -53,7 +53,7 @@ public class MentorProfile extends CommonMethods {
 			Thread.sleep(2000);
 
 			if (isScrollRequired) {
-				for (int i = 0; i < 3; i++) {
+				for (int i = 0; i < 4; i++) {
 					((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					Thread.sleep(2000);
 				}
@@ -75,7 +75,7 @@ public class MentorProfile extends CommonMethods {
 				int counter = 1;
 
 				if (isScrollRequired) {
-					for (int i = 0; i < 2; i++) {
+					for (int i = 0; i < 4; i++) {
 						Thread.sleep(2000);
 						((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					}
@@ -123,14 +123,14 @@ public class MentorProfile extends CommonMethods {
 					comment(joiner, LINE4, 4, retry);
 					Thread.sleep(2000);
 					logger(" Comment Line " + 4 + " has been posted successfully for " + joiner + ".");
-					retry = false;
-					comment(joiner, LINE5, 5, retry);
-					Thread.sleep(2000);
-					logger(" Comment Line " + 5 + " has been posted successfully for " + joiner + ".");
-					retry = false;
-					comment(joiner, LINE6, 6, retry);
-					Thread.sleep(2000);
-					logger(" Comment Line " + 6 + " has been posted successfully for " + joiner + ".");
+//					retry = false;
+//					comment(joiner, LINE5, 5, retry);
+//					Thread.sleep(2000);
+//					logger(" Comment Line " + 5 + " has been posted successfully for " + joiner + ".");
+//					retry = false;
+//					comment(joiner, LINE6, 6, retry);
+//					Thread.sleep(2000);
+//					logger(" Comment Line " + 6 + " has been posted successfully for " + joiner + ".");
 					logger("------------------------------------------------------------------------");
 				} else {
 					break;

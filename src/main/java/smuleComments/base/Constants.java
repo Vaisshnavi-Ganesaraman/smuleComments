@@ -19,7 +19,7 @@ public class Constants {
 	public static final String SEARCH_CURSOR = "//input[@type='search']";
 
 	// Song Selection
-	public static final String TRACK = "Maanguyile Poonguyile";
+	public static final String TRACK = "Poongaatru Un Per";
 	public static final String SONG_ = "//a[contains(text(),'";
 	public static final String _TITLE = "')]";
 	public static final String COLLAB_COUNT = "//span[contains(text(),'collabs')]";
@@ -36,11 +36,13 @@ public class Constants {
 	public static final String CAPTCHA_VERIFY = "//div[@class='recaptcha-checkbox-border']";
 
 	// Comment Text
-	public static final String LINE1 = "Thanks for joining the collab. Extremely glad that you have taken efforts to join the Collab.";
-	public static final String LINE2 = "For a brief feedback of your singing, please visit http://learn2learn.in and click 'Review request form' on top right.";
-	public static final String LINE3 = "Paadarivom Padipparivom teaches a song every week. Join us on 1st & 3rd Fridays @7pm , 2nd & 4th Saturdays @11am (IST).";
-	public static final String LINE4 = "We feature select joins on Sundays @6.05pm (IST).Please visit https://m.facebook.com/learn2learnmusic/ for more details.";
-	public static final String LINE5 = "All these are absolutely FREE OF COST.";
-	public static final String LINE6 = "Thank you if you have already submitted the collab.";
+	// public static final String LINE1 = "Thanks for joining the collab. Extremely
+	// glad that you have taken efforts to join the Collab.";
+	public static final String LINE1 = "For a brief feedback of your singing, please visit http://learn2learn.in and click 'Review request form' on top right.";
+	public static final String LINE2 = "Paadarivom Padipparivom teaches a song every week. Join us on 1st & 3rd Fridays @7pm , 2nd & 4th Saturdays @11am (IST).";
+	public static final String LINE3 = "We feature select joins on Sundays @6.05pm (IST).Please visit https://m.facebook.com/learn2learnmusic/ for more details.";
+	public static final String LINE4 = "All these are absolutely FREE OF COST.";
+	// public static final String LINE6 = "Thank you if you have already submitted
+	// the collab.";
 
 }
