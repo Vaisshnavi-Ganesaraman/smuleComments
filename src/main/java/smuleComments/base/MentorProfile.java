@@ -30,9 +30,10 @@ public class MentorProfile extends CommonMethods {
 		PrintWriter out = null;
 		BufferedWriter bufWriter;
 		int collabCount;
-		String fileName = "./" + TRACK + " - Aishu - Joiners.txt";
-		boolean isScrollRequired = true;
-		int collabCounter = 90;
+		String fileName = "./" + TRACK + " - Koushik - Joiners.txt";
+		// String fileName = "./" + TRACK + " - Sushmitha - Joiners.txt";
+		boolean isScrollRequired = false;
+		int collabCounter = 1;
 
 		try {
 			driver = startApp(SMULE_URL);
@@ -44,16 +45,18 @@ public class MentorProfile extends CommonMethods {
 			hit(SUBMIT_LOGIN);
 
 			hit(SEARCH);
-			enter(SEARCH_CURSOR, "Aishshri");
+			// enter(SEARCH_CURSOR, "Sushmitha_18");
+			enter(SEARCH_CURSOR, "Koushikrck");
 			Actions act = new Actions(driver);
 			act.sendKeys(Keys.ENTER).perform();
 			hit(GO_TO_PROFILE);
 
-			hit(SONG_ + TRACK + _TITLE);
+			Thread.sleep(3000);
+			hit(SONG_ + TRACK + _TITLE + "[1]");
 			Thread.sleep(2000);
 
 			if (isScrollRequired) {
-				for (int i = 0; i < 4; i++) {
+				for (int i = 0; i < 2; i++) {
 					((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					Thread.sleep(2000);
 				}
@@ -75,7 +78,7 @@ public class MentorProfile extends CommonMethods {
 				int counter = 1;
 
 				if (isScrollRequired) {
-					for (int i = 0; i < 4; i++) {
+					for (int i = 0; i < 2; i++) {
 						Thread.sleep(2000);
 						((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 					}
