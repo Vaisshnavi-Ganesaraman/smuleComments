@@ -12,16 +12,16 @@ public class Constants {
 	public static final String SUBMIT_LOGIN = "//span[text()='Log In']";
 
 	// Profile selection
-	public static final String PROFILE_ICON = "//div[@class='sc-jxgQPf hBXCNW']";
+	public static final String PROFILE_ICON = "//div[@class='sc-gGiJkG jzdkxv']";
 	public static final String PROFILE_TAB = "//a[text()='Profile']";
 	public static final String SEARCH = "//button[@aria-label='Search']";
 	public static final String GO_TO_PROFILE = "//div[@class='user-results-container']/a";
 	public static final String SEARCH_CURSOR = "//input[@type='search']";
 
 	// Song Selection
-	public static final String TRACK = "Poongaatru Un Per";
-	public static final String SONG_ = "//a[contains(text(),'";
-	public static final String _TITLE = "')]";
+	public static final String TRACK = "Kanden Kanden (HQ)";
+	public static final String SONG_ = "(//a[contains(text(),'";
+	public static final String _TITLE = "')])";
 	public static final String COLLAB_COUNT = "//span[contains(text(),'collabs')]";
 	public static final String JOINS = "(//div[contains(@class,'is-playable')]/a[2])";
 

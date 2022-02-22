@@ -29,10 +29,12 @@ public class Learn2LearnProfile extends CommonMethods {
 		PrintWriter out = null;
 		BufferedWriter bufWriter;
 		int collabCount;
-		String fileName = "./" + TRACK + " - FemaleMentee - Joiners.txt";
+		// String fileName = "./" + TRACK + " - FemaleMentee - Joiners.txt";
+		String fileName = "./" + TRACK + " - MaleMentee - Joiners.txt";
+		// int inviteNumber = 1;
 		int inviteNumber = 2;
-		int collabCounter = 13;
-		boolean isScrollRequired = true;
+		int collabCounter = 1;
+		boolean isScrollRequired = false;
 
 		try {
 			driver = startApp(SMULE_URL);
